@@ -25,7 +25,7 @@ mpl.use('Agg')
 import matplotlib.pyplot as plt
 
 
-def get_esd_plot_options(eigenvalues, weights, showx=True, showy=True, title="", fsize=12):
+def get_esd_plot_options(eigenvalues, weights, showx=False, showy=False, title="", fsize=12):
     density, grids = density_generate(eigenvalues, weights)
     plt.semilogy(grids, density + 1.0e-7)
     if showy:
