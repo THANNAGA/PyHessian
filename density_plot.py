@@ -29,9 +29,9 @@ def get_esd_plot_options(eigenvalues, weights, showx=False, showy=False, title="
     density, grids = density_generate(eigenvalues, weights)
     plt.semilogy(grids, density + 1.0e-7)
     if showy:
-        plt.ylabel('Density (Log Scale)', fontsize=fsize, labelpad=10)
+        plt.ylabel('Density (Log Scale)', fontsize=fsize)#, labelpad=10)
     if showx:
-        plt.xlabel('Eigenvalues', fontsize=fsize, labelpad=10)
+        plt.xlabel('Eigenvalues', fontsize=fsize)#, labelpad=10)
     if title != "":
         plt.title(title, fontsize=fsize)
     plt.xticks(fontsize=fsize)
